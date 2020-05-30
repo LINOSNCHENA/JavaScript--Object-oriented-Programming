@@ -4,27 +4,41 @@
     <meta charset="utf-8">
     <title>JavaScript Pass Arguments to a Function</title>
 </head>
-
-
-<body>
-
-     <script> 
+<body>  <script> 
      // ANGULAR & PURESTORAGE 2020 WORKSPACE#1
-    // Defining function
+///===============================================================0 ///
     function showFullname(firstName, lastName) {
-        document.write(firstName + " " + lastName);
-    }
-     
-    // Calling function
-    showFullname("Catherine","|", "Phiri"); // Prints: CP
+        document.write(firstName + " " + lastName);    }
+    showFullname("Catherine","|", "Marvin"); 
     document.write("<br>");
-    showFullname("Nchena","|"); // Prints: John undefined
-    showFullname("Nchena"); // Prints: John undefined
+    showFullname("Nchena","|");      // Prints: Marvin undefined
+    document.write("<br>");
+    showFullname("Marvin");         // Prints: Marvin undefined
+    // Calling function #1: Pass argument to function
 
-    // ANGULAR & PURESTORAGE 2020 WORKSPACE#2
+///===============================================================1 ///
+    function logIt(name) {
+  console.log(name);
+  document.write("<br>");
+  document.write(name)
+}
+// Calling function #2: Console Vs Document
+logIt('Katherine'+"|"+"Marvin");
+///===============================================================2 ///
+
+let double = function(num) {   return num * 9;}
+let test = double(3);
+console.log(test+"CalledFunction1");
+
+let zam1 = function(num) {  
+    return true;
+  return false;
+}// return true;}  // undefined
+let zam2=zam1();
+console.log(zam2+"FunctionTrue2");
+// Calling function #4: Calling an Empty functions/ Occupied function
+///===============================================================3 ///
+// ANGULAR & PURESTORAGE 2020 WORKSPACE#2
     </script>
-
-
-
 </body>
 </html>  
