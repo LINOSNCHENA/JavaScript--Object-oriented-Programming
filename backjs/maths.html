@@ -2,55 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JavaScript Pass Arguments to a Function</title>
+    <title> HACKETHON PRACTICE IN JAVASCRIPT/TYPESCRIPT</title>
 </head>
 <body>  <script> 
      // ANGULAR & PURESTORAGE 2020 WORKSPACE#1
 ///===============================================================0 ///
     function showFullname(firstName, lastName) {
         document.write(firstName + " " + lastName);    }
-    showFullname("Catherine","|", "Marvin"); 
+    showFullname("Catherine","Marvin-11"); 
     document.write("<br>");
-    showFullname("Nchena","|");      // Prints: Marvin undefined
-    document.write("<br>");
-    showFullname("Marvin");         // Prints: Marvin undefined
+    showFullname("Marvin-12");         // Prints: Marvin undefined
     // Calling function #1: Pass argument to function
 
 ///===============================================================1 ///
-    function logIt(name) {
-  console.log(name);
+  function logTheyName(nameX) {
+  console.log(nameX);
   document.write("<br>");
-  document.write(name)
+  document.write(nameX)
 }
+logTheyName('Katherine-Z'+"|"+"CAT-Marvin-4");
 // Calling function #2: Console Vs Document
-logIt('Katherine'+"|"+"Marvin");
+
 ///===============================================================2 ///
 
-let double = function(num) {   return num * 9;}
-let test = double(3);
-console.log(test+"CalledFunction1");
+let monze1 = function(num) {   return num * 9;}
+let monze2 = monze1(3);
+console.log(monze2+" : - CalledFunctionWithArug-One");
 
-let zam1 = function(num) {  
-    return true;
-  return false;
-}// return true;}  // undefined
-let zam2=zam1();
-console.log(zam2+"FunctionTrue2");
-// Calling function #4: Calling an Empty functions/ Occupied function
+let chalimb1 = function(num) {  
+    return true;  return false;
+}
+
+let chalimb2=chalimb1();
+console.log(chalimb2+" :- FunctionWithTrueOrFalseResults");
+// Calling function #3: Calling an Empty functions/And an argumented function
+
 ///===============================================================3 ///
 
-//var arr = [[1, 5],[7, 4]];
-let mav=function printArray(arr) {
-    var arr = [1,5,7,8,9,90,77,33,4];
-    for (var i = 0; i < arr.length; i++)
-    if(arr[i]==77){return true;}
-        if (Array.isArray(arr[i]))
-            printArray(arr[i])
-        else
-            console.log(arr[i])
+let mav3=function printArray(arr) {
+    var h = [06, 03, 02, 13, 04, 05, 12, 07, 09, 01, 11, 22];
+e = [];  o = [];
+
+for (var i = 0; i < h.length; ++i) {
+        if ((h[i] % 2) == 0) {
+        e.push(h[i]);
+    } else {        o.push(h[i]);    }
 }
-let mav2=mav();
-console.log(mav2)
+console.log(e);console.log(o);
+return o;
+    }
+
+let mav4=mav3();
+console.log(mav4)
+
+// Calling function #4: Filter an Array even vs odd
+
+///=============================================================== 4 ///
+let mav5=function compare(a, b) {
+    console.log(97-84+"difference")
+    if (a > b) {
+        return -1;
+    } else if (a < b) {
+        return 1;
+    }
+    return 0;
+}
+let mav6=mav5(84,97);   console.log(mav6)
+
+// Calling function #5: Filter an Array even vs odd
+
+///===============================================================5 ///
+
+function getEvenNumbers(num) {
+        if (num % 2 === 0) {  document.writeln(num + "<br />"); }
+    }
+
+    var arr = [1, 2, 3, 4, 5, 6,8,88,78,80];
+   let noreturn= arr.forEach(getEvenNumbers);
+   console.log(noreturn)
+
+// Calling function #6: Filter an Array even vs odd
+///=============================================================== 6 ///
+
+function divideNumbersThenStore(dividend, divisor){
+    var quotient = dividend - divisor;
+    var arr = [dividend, divisor, quotient];    return arr;}
+ 
+// Store returned value 
+var all = divideNumbersThenStore(1997, 1984);   console.log(all)
+
+
+// Calling function #7: Create a block of numbes then return the block
+///=============================================================== 7 ///
 // ANGULAR & PURESTORAGE 2020 WORKSPACE#2
     </script>
 </body>
