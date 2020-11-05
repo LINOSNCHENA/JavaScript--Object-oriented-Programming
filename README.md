@@ -1,4 +1,4 @@
-# SHOPRITE & STORAGE-ARRAY
+# JAVASCRIPT PRINCIPLE
 
 ## FIRST PART- SHOPRITE DOCUMENTATION
 
@@ -14,8 +14,20 @@
 3. Five Documents
 4. Eight Consoles
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+## Execution command:  
 
+```
+PROMISE
+
+node server.js
+
+OBSERVABLES
+
+npm i esm
+npm i rxjs
+node -r esm app.js
+
+```
 
 ## Development server
 
