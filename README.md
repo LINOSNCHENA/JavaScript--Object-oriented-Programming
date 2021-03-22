@@ -26,6 +26,9 @@ OBSERVABLES
 npm i esm
 npm i rxjs
 node -r esm app.js
+cd week10
+C:\Users\linos\Downloads\2021\Week10\src\main\java\muntu1
+cd Week10\src\main\java\muntu1
 
 ```
 
